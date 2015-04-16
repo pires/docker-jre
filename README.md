@@ -3,7 +3,7 @@ Lean (174MB) JRE 8 Docker image, based on `progrium/busybox`.
 
 ## Current software
 
-* Oracle JRE 8 Update 40
+* Oracle JRE 8 Update 45
 
 ## Pre-requisites
 
