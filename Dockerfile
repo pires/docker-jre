@@ -12,4 +12,4 @@ RUN \
   rm -rf $(find /opt/ | grep -E "/jre1.8.0_45/lib/(desktop|locale|fonts|plugin)/")
 
 # Link Java into use
-RUN ln -s /opt/jre1.8.0_40/bin/java /usr/bin/java
+RUN ln -s /opt/jre1.8.0_45/bin/java /usr/bin/java
