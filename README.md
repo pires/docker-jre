@@ -7,14 +7,10 @@ Lean (174MB) JRE 8 Docker image, based on `progrium/busybox`.
 
 ## Pre-requisites
 
-* Docker 1.5.0+ (tested with boot2docker)
+* Docker 1.5.0+
 
-## Build images (optional)
-
-Providing your own version of [the image automatically built for Logstash](https://registry.hub.docker.com/u/pires/docker-jre) will not be supported. This is an *optional* step. You have been warned.
+## Usage
 
 ```
-git clone https://github.com/pires/docker-jre.git
-cd docker-jre
-docker build -t pires/docker-jre .
+docker pull quay.io/pires/docker-jre:8u45
 ```
