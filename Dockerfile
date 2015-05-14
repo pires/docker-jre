@@ -11,5 +11,8 @@ RUN \
   mv jre1.8.0_45 /opt/ && \
   rm -rf $(find /opt/ | grep -E "/jre1.8.0_45/lib/(desktop|locale|fonts|plugin)/")
 
+# Set $JAVA_HOME
+ENV JAVA_HOME /opt/jre1.8.0_45
+
 # Link Java into use
 RUN ln -s /opt/jre1.8.0_45/bin/java /usr/bin/java
