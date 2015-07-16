@@ -1,11 +1,11 @@
 # docker-jre
-Lean (174MB) JRE 8 Docker image, based on `progrium/busybox`.
+Lean (168MB) JRE 8 Docker image, based on `gliderlabs/alpine`.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-jre/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-jre)
 
 ## Current software
 
-* Oracle JRE 8 Update 45
+* Oracle JRE 8 Update 51
 
 ## Pre-requisites
 
@@ -14,5 +14,5 @@ Lean (174MB) JRE 8 Docker image, based on `progrium/busybox`.
 ## Usage
 
 ```
-docker pull quay.io/pires/docker-jre:8u45
+docker pull quay.io/pires/docker-jre:8u51
 ```
