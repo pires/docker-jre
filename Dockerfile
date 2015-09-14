@@ -1,7 +1,7 @@
 FROM alpine:3.2
 MAINTAINER pjpires@gmail.com
 
-ENV JRE=jre1.8.0_51 \
+ENV JRE=jre1.8.0_60 \
     JAVA_HOME=/opt/jre
 
 RUN apk add --update curl wget ca-certificates && \
@@ -12,9 +12,9 @@ RUN apk add --update curl wget ca-certificates && \
     /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib && \
     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf && \
     mkdir /opt && cd /opt && \
-    (curl -Lskj -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u51-b16/server-jre-8u51-linux-x64.tar.gz | \
+    (curl -Lskj -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u60-b27/server-jre-8u60-linux-x64.tar.gz | \
     gunzip -c - | tar xf - ) && \
-    ln -s /opt/jdk1.8.0_51 /opt/jre && \
+    ln -s /opt/jdk1.8.0_60 /opt/jre && \
     ln -s /opt/jre/bin/java /usr/bin/java && \
     apk del curl wget ca-certificates && \
     rm /tmp/* /var/cache/apk/*
