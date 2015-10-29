@@ -5,7 +5,7 @@ Lean (169MB) JRE 8 Docker image, based on `gliderlabs/alpine`.
 
 ## Current software
 
-* Oracle JRE 8 Update 60
+* Oracle JRE 8 Update 66
 
 ## Pre-requisites
 
@@ -14,5 +14,5 @@ Lean (169MB) JRE 8 Docker image, based on `gliderlabs/alpine`.
 ## Usage
 
 ```
-docker pull quay.io/pires/docker-jre:8u60
+docker pull quay.io/pires/docker-jre:8u66
 ```
