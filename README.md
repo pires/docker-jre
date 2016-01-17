@@ -1,5 +1,5 @@
 # docker-jre
-Lean (169MB) JRE 8 Docker image, based on `gliderlabs/alpine`.
+Lean (180MB) JRE 8 Docker image, based on `janeczku/alpine-kubernetes`.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-jre/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-jre)
 
@@ -7,12 +7,8 @@ Lean (169MB) JRE 8 Docker image, based on `gliderlabs/alpine`.
 
 * Oracle JRE 8 Update 66
 
-## Pre-requisites
-
-* Docker 1.7.1+
-
 ## Usage
 
 ```
-docker pull quay.io/pires/docker-jre:8u66
+docker pull quay.io/pires/docker-jre:8u66-dns
 ```

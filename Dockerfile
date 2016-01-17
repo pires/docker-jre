@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM janeczku/alpine-kubernetes:3.3
 MAINTAINER pjpires@gmail.com
 
 ENV JRE=jre1.8.0_66 \
