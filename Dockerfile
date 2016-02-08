@@ -1,8 +1,7 @@
-FROM janeczku/alpine-kubernetes:3.3
+FROM alpine:3.3
 MAINTAINER pjpires@gmail.com
 
-ENV JRE=jre1.8.0_66 \
-    JAVA_HOME=/opt/jre
+ENV JAVA_HOME=/opt/java
 
 RUN apk add --update curl wget ca-certificates && \
     cd /tmp && \
@@ -12,10 +11,10 @@ RUN apk add --update curl wget ca-certificates && \
     /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib && \
     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf && \
     mkdir /opt && cd /opt && \
-    (curl -Lskj -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u66-b17/server-jre-8u66-linux-x64.tar.gz | \
+    (curl -Lskj -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u74-b02/server-jre-8u74-linux-x64.tar.gz | \
     gunzip -c - | tar xf - ) && \
-    ln -s /opt/jdk1.8.0_66 /opt/jre && \
-    ln -s /opt/jre/bin/java /usr/bin/java && \
+    ln -s /opt/jdk1.8.0_74 /opt/jre && \
+    ln -s /opt/jre/bin/* /usr/bin/ && \
     apk del curl wget ca-certificates && \
     rm /tmp/* /var/cache/apk/*
 
