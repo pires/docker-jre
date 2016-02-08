@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM janeczku/alpine-kubernetes:3.3
 MAINTAINER pjpires@gmail.com
 
 ENV JAVA_HOME=/opt/java
