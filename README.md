@@ -15,8 +15,4 @@ docker pull quay.io/pires/docker-jre:8u72
 
 ### DNS workaround
 
-Due to [the fact Alpine Linux uses `musl`](https://github.com/gliderlabs/docker-alpine/blob/master/docs/caveats.md#dns), I'm releasing a _workaround_ version of this image based on `janeczku/alpine-kubernetes:3.3`.
-
-```
-docker pull quay.io/pires/docker-jre:8u72-dns
-```
+Until Alpine Linux fixes [DNS integration](https://github.com/gliderlabs/docker-alpine/blob/master/docs/caveats.md#dns), I'm releasing this image based on `janeczku/alpine-kubernetes:3.3`.
