@@ -5,12 +5,12 @@ Lean (118MB) JRE 8 Docker image, based on `alpine:edge` and OpenJDK.
 
 ## Current software
 
-* [OpenJDK 8u72](http://openjdk.java.net/projects/jdk8u/releases/8u72.html)
+* [OpenJDK 8u92](http://openjdk.java.net/projects/jdk8u/releases/8u92.html)
 
 ## Usage
 
 ```
-docker pull quay.io/pires/docker-jre:8u72
+docker pull quay.io/pires/docker-jre:8u92
 ```
 
 ### DNS workaround
