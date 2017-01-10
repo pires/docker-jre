@@ -1,5 +1,5 @@
 # docker-jre
-Lean (109MB) JRE 8 Docker image, based on `alpine:3.4` and OpenJDK.
+Lean (109MB) JRE 8 Docker image, based on `alpine:3.5` and OpenJDK 8.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-jre/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-jre)
 
@@ -10,5 +10,5 @@ Lean (109MB) JRE 8 Docker image, based on `alpine:3.4` and OpenJDK.
 ## Usage
 
 ```
-docker pull quay.io/pires/docker-jre:8u112
+docker pull quay.io/pires/docker-jre:8u112_1
 ```
