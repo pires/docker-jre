@@ -1,5 +1,5 @@
-FROM alpine:3.4
-MAINTAINER pjpires@gmail.com
+FROM alpine:3.5
+MAINTAINER adam.skobodzinski@littlebits.cc
 
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 
