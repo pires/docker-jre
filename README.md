@@ -10,5 +10,5 @@ Lean (81MB) JRE 8 Docker image, based on Alpine Linux 3.6 and OpenJDK 8.
 ## Usage
 
 ```
-docker pull quay.io/pires/docker-jre:8u131
+docker pull quay.io/pires/docker-jre:8u131_alpine3.6.2
 ```
