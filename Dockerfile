@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9
 MAINTAINER pjpires@gmail.com
 
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
