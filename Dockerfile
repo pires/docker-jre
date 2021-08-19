@@ -1,10 +1,8 @@
-FROM alpine:3.9
-MAINTAINER pjpires@gmail.com
+FROM alpine:3.14
 
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 
-RUN apk upgrade --update-cache; \
-    apk add openjdk8-jre; \
-    rm -rf /tmp/* /var/cache/apk/*
+RUN apk update --update-cache; \
+    apk --no-cache add openjdk8-jre;
 
 CMD ["java", "-version"]
